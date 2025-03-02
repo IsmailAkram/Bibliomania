@@ -2,6 +2,6 @@ export default {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
-    "css.colorDecorators.enable": true,
+    // "css.colorDecorators.enable": true,
   },
 };
