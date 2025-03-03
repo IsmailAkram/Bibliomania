@@ -41,7 +41,6 @@ const EditBook = () => {
         navigate("/");
       })
       .catch((error) => {
-        console.log(error);
         setLoading(false);
         alert("An error has occured, please check console.");
         console.log(error);
