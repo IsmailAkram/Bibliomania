@@ -34,5 +34,16 @@ This project showcases the following:
 - [x] Added Book Modal
 - [x] Improve User Experience (UX) with notistack
 
-This project was created by following this [tutorial](https://www.youtube.com/watch?v=-42K44A1oMA) \
-[Tailwind](https://tailwindcss.com/docs/installation/using-vite), [notistack](https://www.npmjs.com/package/notistack/v/3.0.0-alpha.5) for UI beautification. 
+This project was created by following this [tutorial](https://www.youtube.com/watch?v=-42K44A1oMA) with [Tailwind](https://tailwindcss.com/docs/installation/using-vite), [notistack](https://www.npmjs.com/package/notistack/v/3.0.0-alpha.5) for UI beautification.
+
+## How to run this locally
+- Open your preferred text editor and clone this repo via the git command: `git clone https://github.com/IsmailAkram/Bibliomania`
+- Log into your MongoDB [account](https://account.mongodb.com/account/login) and connect to a cluster , then select "Drivers".
+- Navigate to "Database Access" to edit your `<db_password>`
+![image](https://github.com/user-attachments/assets/cf34feb1-fbdf-4db7-b41f-0325a9114478)
+- Update `backend\config.js` with your `mongoDBURL` ans saving all edits.
+
+- `cd` to the `backend` via your terminal and run `npm run dev`. Open http://localhost:5555/
+- `cd` to the `frontend` via your terminal and run `npm run dev`. Open http://localhost:5173/
+
+- You're on the landing page! Time to add and edit some book entries.
