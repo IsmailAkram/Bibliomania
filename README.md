@@ -37,13 +37,26 @@ This project showcases the following:
 This project was created by following this [tutorial](https://www.youtube.com/watch?v=-42K44A1oMA) with [Tailwind](https://tailwindcss.com/docs/installation/using-vite), [notistack](https://www.npmjs.com/package/notistack/v/3.0.0-alpha.5) for UI beautification.
 
 ## How to run this locally
-- Clone this repo via the git command: `git clone https://github.com/IsmailAkram/Bibliomania` and open this project in your preferred text editor.
-- Log into your MongoDB [account](https://account.mongodb.com/account/login) and connect to a cluster , then select "Drivers".
-- Navigate to "Database Access" to edit your `<db_password>`
-![image](https://github.com/user-attachments/assets/cf34feb1-fbdf-4db7-b41f-0325a9114478)
-- Update `backend\config.js` with your `mongoDBURL` and save all edits.
+1. Clone this repo via the git command: `git clone https://github.com/IsmailAkram/Bibliomania` and open this project in your preferred text editor.
+2. Log into your MongoDB [account](https://account.mongodb.com/account/login) (if you already have a cluster, move to step 4), navigate DATABASE > Clusters and build/connect to a cluster.
+![image](https://github.com/user-attachments/assets/be43b258-d24e-4b3d-9ec6-e98b1dc5cf26)
 
-- `cd` to the `backend` via your terminal and run `npm run dev`. Open http://localhost:5555/
-- `cd` to the `frontend` via your terminal and run `npm run dev`. Open http://localhost:5173/
+3. Choose your payment template (Free for new users) and uncheck "preload sample dataset"! And Create Deployment
+![image](https://github.com/user-attachments/assets/61df08c0-4896-4d5a-8a05-7b10730c2aa4)
 
-- You're on the landing page! Time to add and edit some book entries.
+4. Connect to Cluster and click "Drivers" and then copy the connection string.
+![image](https://github.com/user-attachments/assets/62d0842f-9590-4e43-b4f4-5ae10bd8aca5)
+
+5. Navigate to "Database Access" to edit your `<db_password>` in the connection string.
+![image](https://github.com/user-attachments/assets/8fb53c54-687b-41e7-8a84-09cd5c40d277)
+
+   
+6. In your text editor, update `backend\config.js` with your `mongoDBURL` and save all edits.
+
+7. `cd` to the `backend` via your terminal and run `npm install mongodb` then `npm install`. Finally run `npm run dev`. You will know this step was succesful if you see `App is listening to port: 5555` \
+![image](https://github.com/user-attachments/assets/deeff3ca-475f-4be8-9967-eae4e1fda224)
+
+9. `cd` to the `frontend` via your terminal and run `npm install` and then run `npm run dev`. Once the project is running, open your web browser of choice and type localhost:5173 in the address bar. Alternatively, you can click on this [link](http://localhost:5173/) and it will open the localhost in your default web browser. \
+![image](https://github.com/user-attachments/assets/9b6cd135-a35c-46b9-bc3f-859d9fd7db6f)
+
+You're on the landing page! Time to add and edit some book entries.
